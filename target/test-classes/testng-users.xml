@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1" >
+    <test name="Users">
+        <classes>
+            <class name="tests.UserCreationTests"/>
+            <class name="tests.GetCreatedUserTests"/>
+            <class name="tests.UpdateUserTests"/>
+            <class name="tests.UserDeletetionTests"/>
+        </classes>
+    </test>
+</suite>
