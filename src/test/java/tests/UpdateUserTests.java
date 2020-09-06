@@ -30,7 +30,6 @@ public class UpdateUserTests extends TestBase {
         response.statusCode(200).
                 body("name", equalTo(user2.getName())).
                 body("job", equalTo(user2.getJob())).
-                body("id", equalTo(user2.getId())).
                 body("$", hasKey("updatedAt"));
     }
 

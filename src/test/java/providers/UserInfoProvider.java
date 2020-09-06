@@ -4,13 +4,11 @@ import com.google.gson.Gson;
 import models.UserInfo;
 import org.testng.annotations.DataProvider;
 
-import java.io.IOException;
-
 public class UserInfoProvider {
 
 
     @DataProvider(name = "generateInfo")
-    public Object[] generateInfo() throws IOException {
+    public Object[] generateInfo() {
 
         UserInfo user = new UserInfo()
                 .withName("Name" + (int) (Math.random() * 10000))
@@ -24,7 +22,7 @@ public class UserInfoProvider {
     }
 
     @DataProvider(name = "generateEmptyInfo")
-    public Object[] generateEmptyInfo() throws IOException {
+    public Object[] generateEmptyInfo() {
 
         UserInfo user = new UserInfo()
                 .withName("")

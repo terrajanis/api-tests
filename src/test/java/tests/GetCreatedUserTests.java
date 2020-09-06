@@ -28,7 +28,7 @@ public class GetCreatedUserTests extends TestBase{
     }
 
     @Test
-    public void getNonExistCreatedUser() throws IOException {
+    public void getNonExistUser() throws IOException {
 
         given().
                 contentType("application/json").
