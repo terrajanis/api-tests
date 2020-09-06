@@ -14,6 +14,8 @@ public class GetCreatedUserTests extends TestBase{
     @Test(priority = 2)
     public void getCreatedUser() throws IOException {
 
+        //На самом деле это апи не сохраняет созданных юзеров (т.к. тестовое). Однако тест специально реализован так, будто сохраняет. Поэтому в данном случае будет фактически 404.
+
         UserInfo user = jsonHelper.readFromJson(new File(PATH_TO_USER));
 
         given().
